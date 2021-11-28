@@ -1,0 +1,73 @@
+:root{
+  --brd : solid 1px #c0c0c0;
+  --font-color : rgba(16, 17, 15, 0.82);
+  --marg-bottom : 0.5rem;
+  --padding-block : 0.3rem;
+  --margin-right :  0.5rem;
+    --body-padding : 0.5rem 5rem;
+    --margin-center : 0 auto;
+    --height-top-box : 9rem;
+    --height-down-box : 9rem;
+
+}
+body {
+ padding: var(--body-padding);
+}
+.wrapper {
+  margin: var(--margin-center);
+
+
+}
+.top-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: var(--font-color);
+  margin-bottom: var(--marg-bottom);
+  height:var(  --height-top-box);
+}
+.item1 {
+  border: var(--brd);
+  flex: 1;
+  margin-right: var(--margin-right);
+  padding: var(--padding-block);
+}
+.item2 {
+  flex: 3;
+  border: var(--brd);
+    margin-right: var(--margin-right);
+  padding: var(--padding-block);
+}
+.item3 {
+  border: var(--brd);
+    flex: 1;
+    padding: var(--padding-block);
+}
+.main-box {
+
+  display: flex;
+  height: 100vh;
+  margin-bottom: var(--marg-bottom);
+
+}
+.aside {
+  border: var(--brd);
+  padding: var(--padding-block);
+  margin-right: var(--margin-right);
+  flex: 1
+
+
+}
+.article {
+  padding: var(--padding-block);
+  flex:3;
+  order:0;
+  border: var(--brd);
+  
+}
+.down-box {
+  border: var(--brd);
+  height:var(--height-down-box);
+  padding: var(--padding-block);
+
+}
